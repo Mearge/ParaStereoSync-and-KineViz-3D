@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ParaStereoSync and KineViz-3D: A Python suite for parallelized stereo-vision tracking and spatio-temporal visualization of structural displacements"
+type: software
+version: 1.0.0
+date-released: 2026-05-01
+license: MIT
+repository-code: "https://github.com/your/repo"
+authors:
+  - family-names: "Surname1"
+    given-names: "Given1"
+    affiliation: "Department, Institution, Country"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Surname2"
+    given-names: "Given2"
+    affiliation: "Department, Institution, Country"
+keywords:
+  - stereo vision
+  - template tracking
+  - ECC
+  - triangulation
+  - structural monitoring
+abstract: "This paper presents an open-source Python suite for sparse three-dimensional displacement tracking and kinematic analysis in large-scale structural dynamic experiments. The suite consists of five tools. Three utility tools handle upstream preparation: VidTrim trims raw video footage to the required size with lossless FFmpeg encoding; tkCalib2 derives camera parameters from either checkerboard image sets or single-image control-point correspondences; and TempArUco uses ArUco fiducial markers to generate template files for stereo cameras automatically. ParaStereoSync performs CPU-parallelized enhanced correlation coefficient (ECC) image tracking, sub-frame temporal synchronization by reprojection-error minimization, and stereo triangulation; and KineViz-3D provides interactive 3D heatmap visualization, profile evolution dashboards, phase-space trajectory analysis, automated peak-misalignment detection, and six-degree-of-freedom rigid body decomposition. Demonstrated on shake-table testing of suspended ceiling systems with 324 simultaneously tracked spatial nodes, the suite delivers a complete pipeline from raw video to quantified structural kinematics using only consumer-grade cameras and standard Python scientific libraries."

@@ -1,0 +1,37 @@
+
+digraph G {
+    concentrate = true;
+
+    rankdir = TB;
+    node [style=filled,fillcolor="#ffffff",fontcolor="#000000",fontname=Helvetica,fontsize=10];
+
+    chessboard_object_points [fillcolor="#b65353",fontcolor="#ffffff",shape="folder"];
+    draw3dMesh [fillcolor="#a47246",fontcolor="#ffffff",shape="folder"];
+    drawPoints [fillcolor="#b6ae53",shape="folder"];
+    improCalib [fillcolor="#8bb34c",shape="folder"];
+    improMisc [fillcolor="#5ac247",shape="folder"];
+    improStrings [fillcolor="#53b672",shape="folder"];
+    imread2 [fillcolor="#4cb39b",shape="folder"];
+    imshow2 [fillcolor="#539fb6",shape="folder"];
+    inputs [fillcolor="#3b68ce",fontcolor="#ffffff",shape="folder"];
+    openpyxl [fillcolor="blue",fontcolor="white",shape="folder"];
+    readCamera [fillcolor="#8649ac",fontcolor="#ffffff",shape="folder"];
+    tkCalib2_py [fillcolor="#6a3966",fontcolor="#ffffff",label="tkCalib2.py"];
+    writeCamera [fillcolor="#c24780",fontcolor="#ffffff",shape="folder"];
+    chessboard_object_points -> tkCalib2_py [fillcolor="#b65353",minlen="2"];
+    draw3dMesh -> tkCalib2_py [fillcolor="#a47246",minlen="2"];
+    drawPoints -> tkCalib2_py [fillcolor="#b6ae53",minlen="2"];
+    improCalib -> tkCalib2_py [fillcolor="#8bb34c",minlen="2"];
+    improMisc -> improCalib [fillcolor="#5ac247"];
+    improMisc -> tkCalib2_py [fillcolor="#5ac247",minlen="2"];
+    improStrings -> tkCalib2_py [fillcolor="#53b672",minlen="2"];
+    imread2 -> draw3dMesh [fillcolor="#4cb39b"];
+    imshow2 -> tkCalib2_py [fillcolor="#539fb6",minlen="2"];
+    inputs -> draw3dMesh [fillcolor="#3b68ce"];
+    inputs -> imread2 [fillcolor="#3b68ce"];
+    inputs -> readCamera [fillcolor="#3b68ce"];
+    openpyxl -> tkCalib2_py [fillcolor="blue",minlen="2"];
+    readCamera -> draw3dMesh [fillcolor="#8649ac"];
+    writeCamera -> readCamera [fillcolor="#c24780"];
+    writeCamera -> tkCalib2_py [fillcolor="#c24780",minlen="2"];
+}

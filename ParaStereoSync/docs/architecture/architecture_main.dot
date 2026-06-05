@@ -1,0 +1,53 @@
+
+digraph G {
+    concentrate = true;
+
+    rankdir = TB;
+    node [style=filled,fillcolor="#ffffff",fontcolor="#000000",fontname=Helvetica,fontsize=10];
+
+    certifi [fillcolor="#b69553",shape="folder"];
+    createFileList [fillcolor="#b3b34c",shape="folder"];
+    cycler [fillcolor="#9dce3b",shape="folder"];
+    drawMarkerShift [fillcolor="#70c247",shape="folder"];
+    drawPoints [fillcolor="#53b653",shape="folder"];
+    eccTrackVideo_Multistep_warp_guess [fillcolor="#49ac6a",shape="folder"];
+    inputs [fillcolor="#10f9ac",shape="folder"];
+    matplotlib [fillcolor="blue",fontcolor="white",shape="folder"];
+    packaging [fillcolor="#5395b6",shape="folder"];
+    ParaStereoSync_py [fillcolor="#855c47",fontcolor="#ffffff",label="ParaStereoSync\.\npy"];
+    pickPoints [fillcolor="#43619d",fontcolor="#ffffff",shape="folder"];
+    pickTemplates [fillcolor="#3a3ab0",fontcolor="#ffffff",shape="folder"];
+    PIL [fillcolor="#e61919",fontcolor="#ffffff",shape="folder"];
+    readCamera [fillcolor="#6e4cb3",fontcolor="#ffffff",shape="folder"];
+    readPoints [fillcolor="#914cb3",fontcolor="#ffffff",shape="folder"];
+    triangulatePoints2 [fillcolor="#8f3d8f",fontcolor="#ffffff",shape="folder"];
+    typing_extensions [fillcolor="#b65395",fontcolor="#ffffff",shape="folder"];
+    writePoints [fillcolor="#b65374",fontcolor="#ffffff",shape="folder"];
+    certifi -> matplotlib [fillcolor="#b69553"];
+    createFileList -> triangulatePoints2 [fillcolor="#b3b34c"];
+    cycler -> matplotlib [fillcolor="#9dce3b",minlen="2"];
+    drawMarkerShift -> pickPoints [fillcolor="#70c247"];
+    drawMarkerShift -> pickTemplates [fillcolor="#70c247"];
+    drawPoints -> triangulatePoints2 [fillcolor="#53b653"];
+    eccTrackVideo_Multistep_warp_guess -> ParaStereoSync_py [fillcolor="#49ac6a",minlen="2"];
+    inputs -> createFileList [fillcolor="#10f9ac"];
+    inputs -> eccTrackVideo_Multistep_warp_guess [fillcolor="#10f9ac"];
+    inputs -> ParaStereoSync_py [fillcolor="#10f9ac",minlen="2"];
+    inputs -> pickPoints [fillcolor="#10f9ac"];
+    inputs -> pickTemplates [fillcolor="#10f9ac"];
+    inputs -> readCamera [fillcolor="#10f9ac"];
+    inputs -> readPoints [fillcolor="#10f9ac"];
+    inputs -> triangulatePoints2 [fillcolor="#10f9ac"];
+    matplotlib -> ParaStereoSync_py [fillcolor="blue",minlen="2"];
+    matplotlib -> pickPoints [fillcolor="blue",minlen="2"];
+    packaging -> matplotlib [fillcolor="#5395b6",minlen="2"];
+    pickPoints -> pickTemplates [fillcolor="#43619d"];
+    pickTemplates -> eccTrackVideo_Multistep_warp_guess [fillcolor="#3a3ab0"];
+    pickTemplates -> ParaStereoSync_py [fillcolor="#3a3ab0",minlen="2"];
+    PIL -> matplotlib [fillcolor="#e61919",minlen="2"];
+    readCamera -> triangulatePoints2 [fillcolor="#6e4cb3"];
+    readPoints -> triangulatePoints2 [fillcolor="#914cb3"];
+    triangulatePoints2 -> ParaStereoSync_py [fillcolor="#8f3d8f",minlen="2"];
+    typing_extensions -> matplotlib [fillcolor="#b65395",minlen="2"];
+    writePoints -> triangulatePoints2 [fillcolor="#b65374"];
+}
