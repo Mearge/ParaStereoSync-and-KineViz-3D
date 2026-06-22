@@ -120,7 +120,7 @@ Additional external dependency:
 
 ## Documentation Map
 
-Complete documentation is in `docs1111`:
+Complete documentation is in `docs`:
 - `docs/index.md` (entry page)
 - `docs/Getting_Started.md`
 - `docs/Installation.md`
