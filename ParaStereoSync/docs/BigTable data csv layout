@@ -1,0 +1,58 @@
+Bigtable (CSV) data layout
+
+
+
+--- video 1 ---
+Column 1: frame index
+Column 2: xi of POI 1 of video 1
+Column 3: yi of POI 1 of video 1
+Column 4: rotation (deg) of POI 1
+Column 5: correlation (0 if failed) of POI 1
+Column 6: ECC computing time of POI 1
+Column 7: xi of POI 2
+.
+.
+.
+Column 1607: xi of POI 324 of video 1
+Column 1608: yi of POI 324 of video 1
+Column 1609: rotation (deg) of POI 324
+Column 1610: correlation (0 if failed) of POI 324
+Column 1611: ECC computing time of POI 324
+
+--- video 2 ---
+Column 1632: xi of POI 1 of video 2
+Column 1633: yi of POI 1 of video 2
+Column 1634: rotation (deg) of POI 1
+Column 1635: correlation (0 if failed) of POI 1
+Column 1636: ECC computing time of POI 1
+Column 1637: xi of POI 2
+.
+.
+.
+Column 3237: xi of POI 324 of video 2
+Column 3238: yi of POI 324 of video 2
+Column 3239: rotation (deg) of POI 324
+Column 3240: correlation (0 if failed) of POI 324
+Column 3241: ECC computing time of POI 324
+.
+.
+.
+Column 3262: Xw of POI 1
+Column 3263: Xy of POI 1
+Column 3264: Xz of POI 1
+Column 3265: xi camera 1 reprojection error of POI 1
+Column 3266: yi camera 1 reprojection error of POI 1
+Column 3267: xi camera 2 reprojection error of POI 1
+Column 3268: yi camera 2 reprojection error of POI 1
+Column 3263: Xw of POI 2 
+.
+.
+.
+Column 5509: Xw of POI 324
+Column 5510: Xy of POI 324
+Column 5511: Xz of POI 324
+Column 5512: xi camera 1 reprojection error of POI 324
+Column 5513: yi camera 1 reprojection error of POI 324
+Column 5514: xi camera 2 reprojection error of POI 324
+Column 5515: yi camera 2 reprojection error of POI 324
+
