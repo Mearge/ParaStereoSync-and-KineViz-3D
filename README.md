@@ -157,3 +157,6 @@ To ensure full reproducibility, a small example dataset (including stereo image 
 1. Download the dataset from the Zenodo link above.
 2. Extract the `.zip` archive.
 3. Place the extracted files directly into the `docs/examples/` directory in this repository before running the example scripts.
+## Step_by_step example
+To ensure full reproducibility, a step-by-step video file example is hosted permanently on Zenodo. please access using the link below. 
+  [https://doi.org/10.5281/zenodo.22760447](https://doi.org/10.5281/zenodo.22761531)  
